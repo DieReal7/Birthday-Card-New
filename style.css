@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Gochi+Hand&family=Gruppo&family=Montserrat&family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+/*        Wrapper : all things inside this     */
+.wrapper{
+    height: 90vh;
+    width:100%;
+    /* background-color: lightseagreen; */
+    display: flex;;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*        Top Bar      */
+.topbar{
+    height: 20vh;   
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar-col1{
+    height: 20vh;
+    width: 20%;
+    background-color: rgb(116, 117, 118);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.topbar-col1 h1{
+    width: 100%;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    color: white;
+}
+
+.topbar-col2{   
+    height: 20vh;
+    width: 79%;
+    background-color: rgb(116, 117, 118);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+}
+
+.topbar-col2 .toolbar1{
+    width: 50%;
+    height: 10vh;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.topbar-col2 .toolbar2 {
+    height: 20vh;
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.toolbar2 li{
+    height: 18vh;
+    width: 24%;
+    /* background-color: blue; */
+
+}
+
+.toolbar2 li img{
+    height: 18vh;
+    width: 100%;
+}
+
+.topbar ul li{
+    list-style: none;
+}
+
+.topbar ul li i{
+    font-size: 1.5rem;
+}
+
+/*      Left ToolBar */
+
+.left-toolbar{
+    height: 70vh;
+    width: 20%;
+    background-color: rgb(116, 117, 118);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    row-gap: 10vh;
+}
+
+.left-toolbar .text-color{
+    width: 100%;
+    height: 25vh;
+    /* background-color: gold; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    
+}
+
+.text-color h1{display: none;}
+
+.text-color .colors{
+    height: 10vh;
+    width: 24%;
+    border-radius: 50%;
+    /* background-color: red; */
+}
+
+/*   For Text Colors */
+.text-color .color1{
+    background-color: white;
+}
+.text-color .color2{
+    background-color: skyblue;
+}
+.text-color .color3{
+    background-color: violet;
+}
+.text-color .color4{
+    background-color: blue;
+}
+.text-color .color5{
+    background-color: green;
+}
+.text-color .color6{
+    background-color: yellow;
+}
+.text-color .color7{
+    background-color: orange;
+}
+.text-color .color8{
+    background-color: red;
+}
+
+.left-toolbar .background-color{
+    width: 100%;
+    height: 35vh;
+    /* background-color: pink; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-a;
+}
+
+.background-color h1{
+    height: 10vh;
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 10vh;
+    text-align: center;
+    /* background-color: red; */
+    color: white;
+}
+
+.background-color .bg-colors{
+    height: 10vh;
+    width: 24%;
+    border-radius: 50%;
+}
+
+/*     For Background - Colors */
+.background-color .bg-color1{
+    background-color: palegreen;
+}
+.background-color .bg-color2{
+    background-color: lightblue;
+}
+.background-color .bg-color3{
+    background-color: lightgray;
+}
+.background-color .bg-color4{
+    background-color: lightpink;
+}
+.background-color .bg-color5{
+    background-color: lightseagreen;
+}
+.background-color .bg-color6{
+    background-color: lightslategray;
+}
+.background-color .bg-color7{
+    background-color: tan;
+}
+.background-color .bg-color8{
+    background-color: seagreen;
+}
+
+/*     Main -Container   */
+.container{
+    height: 70vh;
+    width: 79%;
+    background-color: #9ea5a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*      Birthday card      */
+
+.container .bday-card{
+    height: 65vh;
+    width: 60%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    row-gap: 5vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bday-card h1{
+    /* height: 10vh; */
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    /* background-color: red; */
+}
+
+.bday-card h3{
+    /* height: 10vh; */
+    /* width: 80%; */
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    /* background-color: green; */
+
+}
+
+
+
+
+
+/* //////////////////////////////////////////////////////////// */
+/* -------------------- MEDIA 650px ----------------------- */
+
+@media(max-width : 650px){
+/*           Wrapper : all things inside this        */
+.wrapper{
+    /* height: 90vh;
+    width:100%;
+    background-color: lightseagreen;
+    display: flex;;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+
+    height: 72vh;
+    width: 100%;
+    /* background-color: red; */
+    align-content: flex-start;
+    row-gap: 0.5vh;
+
+    
+}
+
+/*        Top Bar      */
+.topbar{
+    /* height: 20vh;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: space-between; */
+
+    height: 10vh; /* later change to 10 vh */
+    width: 100%;
+    /* background-color: yellow; */
+
+}
+
+.topbar-col1{
+    /* height: 20vh;
+    width: 20%;
+    background-color: rgb(116, 117, 118);
+    display: flex;
+    flex-direction: column-reverse; */
+
+    height: 10vh;
+    width: 30%;
+    display: none;
+    
+}
+
+.topbar-col1 h1{
+    /* width: 100%;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    color: white; */
+
+    width: 100%;
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 1.8rem;
+
+}
+
+.topbar-col2{   
+    /* height: 20vh;
+    width: 79%;
+    background-color: rgb(116, 117, 118);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end; */
+
+    height: 10vh;
+    width: 100%;
+    align-items: flex-start;
+
+}
+
+.topbar-col2 .toolbar1{
+    /* width: 50%;
+    height: 10vh;
+    background-color: green;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+
+    /* background-color: green; */
+    height: 3vh;
+    width: 100%;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+}
+
+.topbar-col2 .toolbar2 {
+    /* height: 20vh;
+    width: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+
+    /* background-color: blue; */
+    height: 7vh;
+    width: 100%;
+}
+
+.toolbar2 li{
+    /* height: 18vh;
+    width: 24%;
+    background-color: blue; */
+
+    /* display : none; */
+    /* background-color: #9ea5a5; */
+    /* background-color: red; */
+    height: 6vh;
+    width: 10%;
+
+}
+
+.toolbar2 li img{
+    /* height: 18vh;
+    width: 100%; */
+
+    /* display : none; */
+    height: 6vh;
+    width: 100%;
+}
+
+.topbar ul li{
+    /* list-style: none; */
+
+    /* display : none; */
+}
+
+.topbar ul li i{
+    font-size: 1rem; /* will not change */
+
+    /* display : none; */
+}
+
+.toolbar1 .align {
+    width: 4%;
+    /* background-color: black; */
+}
+
+.toolbar1  .options{
+    height: 3vh;
+    width:75%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-evenly;
+    /* changed */
+}
+
+#font-style{
+    width: 60%;
+    height: 3vh;
+    /* changed */
+}
+
+#font-size{
+    width: 30%;
+    /* changed */
+}
+
+/*   -------   Left Side ToolBar ------- */
+
+.left-toolbar{
+    /* height: 70vh;
+    width: 20%;
+    background-color: rgb(116, 117, 118);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    row-gap: 10vh; */
+
+    /* display : none; */
+    height: 20vh;
+    width: 100%;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+
+.left-toolbar .text-color{
+    /* width: 100%;
+    height: 25vh;
+    background-color: gold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around; */
+
+    /* display : none; */
+    /* background-color: purple; */
+    width: 49%;
+    height: 20vh;
+    align-content: space-around;
+    background-color: #9ea5a5;
+    
+}
+
+.text-color h1{
+    display: block;
+    color: white;
+    /* background-color: black; */
+    width: 100%;
+    text-align: center;
+    height: 5vh;
+    line-height: 5vh;
+}
+
+.text-color .colors{
+    /* height: 10vh;
+    width: 24%;
+    border-radius: 50%;
+    background-color: red; */
+
+    /* display : none; */
+
+    height: 5vh;
+    width: 24%;
+    /* background-color: ; */
+}
+
+/*   For Text Colors */
+.text-color .color1{
+    /* background-color: white; */
+
+    /* display : none; */
+}
+.text-color .color2{
+    /* background-color: skyblue; */
+
+    /* display : none; */
+}
+.text-color .color3{
+    /* background-color: violet; */
+
+    /* display : none; */
+}
+.text-color .color4{
+    /* background-color: blue; */
+
+    /* display : none; */
+}
+.text-color .color5{
+    /* background-color: green; */
+
+    /* display : none; */
+}
+.text-color .color6{
+    /* background-color: yellow; */
+
+    /* display : none; */
+}
+.text-color .color7{
+    /* background-color: orange; */
+
+    /* display : none; */
+}
+.text-color .color8{
+    /* background-color: red; */
+
+    /* display : none; */
+}
+
+.left-toolbar .background-color{
+    /* width: 100%;
+    height: 35vh;
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-a; */
+
+    /* display : none; */
+    /* background-color: green; */
+    height: 20vh;
+    width: 49%;
+    align-content: space-around;
+    background-color: #9ea5a5;
+
+    
+}
+
+.background-color h1{
+     /* height: 10vh;
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 10vh;
+    text-align: center;
+     background-color: red; 
+    color: white;  */
+
+    /* display : none; */
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 1.6rem;
+    /* background-color: red; */
+}
+
+.background-color .bg-colors{
+    /* height: 10vh;
+    width: 24%;
+    border-radius: 50%; */
+
+    /* display : none; */
+    height: 5vh;
+}
+
+/*     For Background - Colors */
+.background-color .bg-color1{
+    /* background-color: palegreen; */
+
+    /* display : none; */
+}
+.background-color .bg-color2{
+    /* background-color: lightblue; */
+
+    /* display : none; */
+}
+.background-color .bg-color3{
+    /* background-color: lightgray; */
+
+    /* display : none; */
+}
+.background-color .bg-color4{
+    /* background-color: lightpink; */
+
+    /* display : none; */
+}
+.background-color .bg-color5{
+    /* background-color: lightseagreen; */
+
+    /* display : none; */
+}
+.background-color .bg-color6{
+    /* background-color: lightslategray; */
+
+    /* display : none; */
+}
+.background-color .bg-color7{
+    /* background-color: tan; */
+
+    /* display : none; */
+}
+.background-color .bg-color8{
+    /* background-color: seagreen; */
+
+    /* display : none; */
+}
+
+/*     Main -Container   */
+.container{
+    /* height: 70vh;
+    width: 79%;
+    background-color: #9ea5a5;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    /* display : none; */
+    height: 40vh;
+    width: 100%;
+    background-color: rgb(116, 117, 118);
+}
+
+/*      Birthday card      */
+
+.container .bday-card{
+    /* height: 65vh;
+    width: 60%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    row-gap: 5vh; */
+
+    /* display : none; */
+    height: 30vh;
+    width: 75%;
+    row-gap: 2vh;
+    /* background-size: 100%; */
+    /* background-position: center; */
+}
+
+.bday-card h1{
+    /* height: 10vh;  dont need this */
+    /* width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    background-color: red; */
+
+    /* display : none; */
+    font-size: 2rem;
+}
+
+.bday-card h3{
+    /* height: 10vh;     DNT */
+    /* width: 80%;      DNT*/
+    /* text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    background-color: green; */
+
+    /* display : none; */
+    font-size: 0.5rem;
+
+}
+
+}

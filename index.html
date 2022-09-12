@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/de57d46d14.js" crossorigin="anonymous"></script>
+    <title>Birthday Card</title>
+</head>
+<body>
+    <!-- Container -->
+    <div class="wrapper">
+
+        <!--       Top Bar       -->
+        <div class="topbar">
+            <!-- --- Topbar Left Col ---- -->
+            <div class="topbar-col1">
+                <h1>Text Color</h1>
+            </div>
+
+            <!-- ----- Topbar Right Col -->
+            <div class="topbar-col2">
+                <!-- ---- Toolbar 1  ----- -->
+                <ul class="toolbar1">
+                    <li class="align"  onclick='document.getElementById("birthday-wish").style.textAlign = "Right" ,
+                    document.getElementById("quote").style.textAlign = "Right"'><i class="fa-solid fa-align-right"></i></li>
+
+                    <li class="align" onclick='document.getElementById("birthday-wish").style.textAlign = "justify" ,
+                    document.getElementById("quote").style.textAlign = "justify"'><i class="fa-solid fa-align-justify"></i></li>
+
+                    <li class="align" onclick='document.getElementById("birthday-wish").style.textAlign = "center" ,
+                    document.getElementById("quote").style.textAlign = "center"'><i class="fa-solid fa-align-center"></i></li>
+
+                    <li class="align" onclick='document.getElementById("birthday-wish").style.textAlign = "left" ,
+                    document.getElementById("quote").style.textAlign = "left"'><i class="fa-solid fa-align-left"></i></li>
+
+                    <li class="options">
+                        <i class="fa-solid fa-font">
+                        <select name="" id="font-style" class="fontstyle">
+                            <option value="sen-seriff">Default</option>
+                            <option value="DynaPuff">DynaPuff</option>
+                            <option value="Poppins">Poppins</option>
+                            <option value="Gochi Hand">Gochi Hand</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Roboto">Roboto</option>
+                            <option value="Gruppo">Gruppo</option>
+                        </select>
+                        </i>
+                        <select name="" id="font-size" class="fontsize">
+                            <option value="4rem">Default(64px)</option>
+                            <option value="1rem">16px</option>
+                            <option value="1.5rem">24px</option>
+                            <option value="2rem">32px</option>
+                            <option value="2.5rem">40px</option>
+                            <option value="3rem">48px</option>
+                            <option value="3.5rem">56px</option>
+                            <option value="4.5rem">72px</option>
+                            <option value="4.6rem">80px</option>
+                        </select>
+                         <button class="change-btn" onclick='document.getElementById("birthdaycard").style.fontFamily = document.getElementById("font-style").value , document.getElementById("birthday-wish").style.fontSize = document.getElementById("font-size").value'>Change Font </button>
+                    </li>
+
+                </ul>
+
+                <!-- ----- Toolbar 2 ----- -->
+                <ul class="toolbar2">
+                    <li onclick='document.getElementById("birthdaycard").style.backgroundImage = "url(./bday-bg.jpg)"'><img  src="./bday-bg.jpg" alt=""></li>     
+
+                    <li onclick='document.getElementById("birthdaycard").style.backgroundImage = "url(./bday-bg2.jpg)"'><img src="./bday-bg2.jpg" alt=""></li>
+                    
+                    <li onclick='document.getElementById("birthdaycard").style.backgroundImage = "url(./bday-bg3.jpg)"'><img src="./bday-bg3.jpg" alt=""></li>
+
+                    <li onclick='document.getElementById("birthdaycard").style.backgroundImage = "url(./bday-bg4.jpg)"'><img src="./bday-bg4.jpg" alt=""></li>
+                </ul>
+        
+            </div>
+        </div>
+
+        <!--       Left Side Bar       -->
+        <aside class="left-toolbar">
+
+            <div class="text-color">
+                <h1>Text Color</h1>
+                <div class="colors color1" onclick='document.getElementById("birthdaycard").style.color = "white"'></div>
+                <div class="colors color2" onclick='document.getElementById("birthdaycard").style.color = "skyblue"'></div>
+                <div class="colors color3" onclick='document.getElementById("birthdaycard").style.color = "violet"'></div>
+                <div class="colors color4" onclick='document.getElementById("birthdaycard").style.color = "blue"'></div>
+                <div class="colors color5" onclick='document.getElementById("birthdaycard").style.color = "green"'></div>
+                <div class="colors color6" onclick='document.getElementById("birthdaycard").style.color = "yellow"'></div>
+                <div class="colors color7" onclick='document.getElementById("birthdaycard").style.color = "orange"'></div>
+                <div class="colors color8" onclick='document.getElementById("birthdaycard").style.color = "red"'></div>
+            </div>
+
+            <div class="background-color">
+                <h1>Background Color</h1>
+
+                <div class="bg-colors bg-color1" onclick='document.getElementById("birthdaycard").style.background = "" ,document.getElementById("birthdaycard").style.backgroundColor = "palegreen"'></div>
+                <div class="bg-colors bg-color2" onclick='document.getElementById("birthdaycard").style.background = "" ,document.getElementById("birthdaycard").style.backgroundColor = "lightblue"'></div>
+                <div class="bg-colors bg-color3" onclick='document.getElementById("birthdaycard").style.background = "" ,document.getElementById("birthdaycard").style.backgroundColor = "lightgray"'></div>
+                <div class="bg-colors bg-color4" onclick='document.getElementById("birthdaycard").style.background = "" ,document.getElementById("birthdaycard").style.backgroundColor = "lightpink"'></div>
+                <div class="bg-colors bg-color5" onclick='document.getElementById("birthdaycard").style.background = "" ,document.getElementById("birthdaycard").style.backgroundColor = "lightseagreen"'></div>
+                <div class="bg-colors bg-color6" onclick='document.getElementById("birthdaycard").style.background = "" ,document.getElementById("birthdaycard").style.backgroundColor = "lightslategray"'></div>
+                <div class="bg-colors bg-color7" onclick='document.getElementById("birthdaycard").style.background = "" ,document.getElementById("birthdaycard").style.backgroundColor = "tan"'></div>
+                <div class="bg-colors bg-color8" onclick='document.getElementById("birthdaycard").style.background = "" ,document.getElementById("birthdaycard").style.backgroundColor = "seagreen"'></div>
+                
+
+            </div>
+        </aside>
+
+        <!--      Right Container -->
+        <div class="container">
+            <div class="bday-card" id='birthdaycard'>
+                <h1 id="birthday-wish">Happy Birthday To You !</h1>
+                <h3 id="quote">Enjoy your day! Its only one in every 365 days</p>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
